@@ -7,6 +7,8 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { User1Component } from './components/user1/user1.component';
 import { User2Component } from './components/user2/user2.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { User2Component } from './components/user2/user2.component';
     ChildComponent,
     User1Component,
     User2Component,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
