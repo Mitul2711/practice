@@ -1,23 +1,17 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-parent',
-  templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.css']
+  selector: 'app-user1',
+  templateUrl: './user1.component.html',
+  styleUrls: ['./user1.component.css']
 })
-export class ParentComponent implements OnInit {
-  
+export class User1Component implements OnInit {
+
   @Output() parentFunction: EventEmitter<any> = new EventEmitter();
-
+  
   ngOnInit(): void {
-    this.parentFunction.emit(this.tableData);  
+    this.parentFunction.emit(this.tableData);
   }
-
-  tableValue: any;
-
-  // parentFunction(data: any) {
-  //   this.tableValue = data
-  // }
 
   tableData: any[] = [
     {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
@@ -32,5 +26,6 @@ export class ParentComponent implements OnInit {
     {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
   ]
 
+  
 
 }
