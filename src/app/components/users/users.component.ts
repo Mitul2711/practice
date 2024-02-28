@@ -15,9 +15,13 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
     this.user.getData().subscribe(data => {
       this.userData = data;
-      console.log(this.userData);
-      
+      // console.log(this.userData);
     })
+  }
+
+  onSubmit(data: any) {
+    console.log(data);
+    
   }
 
 }
