@@ -19,11 +19,15 @@ export class CustomDirective {
   onClick() {
     if (this.number % 5 === 0) {
       
+      if(this.ef) {
         this.ef.nativeElement.style.color = 'green';
+      }
  
     } else {
 
-        this.ef.nativeElement.style.color = 'red';
+        if(this.ef) {
+          this.ef.nativeElement.style.color = 'red';
+        }
 
     }
   }
