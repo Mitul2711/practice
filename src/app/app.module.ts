@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/users/users.component';
 import { FormsModule } from '@angular/forms';
+import { CustomDirective } from './directives/custom.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
