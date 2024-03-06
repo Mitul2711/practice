@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form',
@@ -22,6 +23,11 @@ export class FormComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    Swal.fire({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success"
+    });
   }
 
   onSubmit(){
