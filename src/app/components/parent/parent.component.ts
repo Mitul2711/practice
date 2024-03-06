@@ -12,8 +12,8 @@ export class ParentComponent implements AfterViewInit, OnInit {
 
   ngOnInit(): void {
   }
-  ngAfterViewInit(): void {
-    
+
+  ngAfterViewInit(): void {  
     setTimeout(() => {
       this.childData.userData = 10;
     }, 1000);

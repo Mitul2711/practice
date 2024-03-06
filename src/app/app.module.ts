@@ -14,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ChildComponent } from './components/child/child.component';
     CustomDirective,
     ParentComponent,
     ChildComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,

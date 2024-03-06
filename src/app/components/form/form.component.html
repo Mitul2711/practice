@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <div class="col-md-2"></div>
+
+    <form class="col-md-8" [formGroup]="userForm" (submit)="onSubmit()">
+
+        <div class="form-group">
+            <input type="text" class="form-control"  aria-describedby="emailHelp"
+                placeholder="Enter firstName" formControlName="firstName">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" aria-describedby="emailHelp"
+                placeholder="Enter lastName" formControlName="lastName">
+        </div>
+
+
+        <div formGroupName="authForm">
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email" formControlName="email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="col-md-2"></div>
+</div>

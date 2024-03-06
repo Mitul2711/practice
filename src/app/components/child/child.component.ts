@@ -9,7 +9,7 @@ export class ChildComponent implements OnInit {
   userData: any;
 
   ngOnInit(): void {
-    console.log(this.userData);
+    
   }
 
 }
