@@ -21,6 +21,7 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 
 import { MenuModule } from '@syncfusion/ej2-angular-navigations';
+import { FormArrayComponent } from './components/form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MenuModule } from '@syncfusion/ej2-angular-navigations';
     ChildComponent,
     FormComponent,
     EjsTableComponent,
+    FormArrayComponent,
   ],
   imports: [
     BrowserModule,
