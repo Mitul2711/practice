@@ -15,6 +15,12 @@ import {MatCardModule} from '@angular/material/card';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { FormComponent } from './components/form/form.component';
+import { EjsTableComponent } from './components/ejs-table/ejs-table.component';
+
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+
+import { MenuModule } from '@syncfusion/ej2-angular-navigations';
 
 @NgModule({
   declarations: [
@@ -24,6 +30,7 @@ import { FormComponent } from './components/form/form.component';
     ParentComponent,
     ChildComponent,
     FormComponent,
+    EjsTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +41,11 @@ import { FormComponent } from './components/form/form.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GridModule,
+    MenuModule
   ],
-  providers: [],
+  providers: [PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

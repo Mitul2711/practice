@@ -1,0 +1,16 @@
+<div class="container">
+    <ejs-grid [dataSource]='data' width="700px"
+        [allowPaging]="true" 
+        [pageSettings]="pageSetting" 
+        [allowSorting]="true" 
+        [allowFiltering]="true"
+        [allowGrouping]="true"
+        >
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID'></e-column>
+            <e-column field='CustomerID' headerText='Customer ID'></e-column>
+            <e-column field='Freight' headerText='Freight' format='C2'></e-column>
+            <e-column field='OrderDate' headerText='Order Date' format='yMd'></e-column>
+        </e-columns>
+    </ejs-grid>
+</div>
